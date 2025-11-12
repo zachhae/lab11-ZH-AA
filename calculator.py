@@ -1,6 +1,6 @@
 # https://github.com/zachhae/lab11-ZH-AV
-# Partner 1: Zach Haedicke
-# Partner 2: Aniruth Venkede
+# Partner 1: Zach Haedike
+# Partner 2: Aniruth Venkedes
 
 """
 calculator.py
