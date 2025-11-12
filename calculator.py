@@ -15,10 +15,6 @@ def subtract(a, b):
 def mul(a, b):
     return a * b
 
-def div(a, b):
-    if a == 0: raise(ZeroDivisionError)
-    return b / a
-
 def logarithm(a, b):
     if a <= 0 or b <= 0:
         raise ValueError("Logarithm undefined for non-positive values (a <= 0 or b <= 0).")
@@ -26,5 +22,3 @@ def logarithm(a, b):
 
 def exp(a, b):
     return a ** b
-
-
