@@ -40,8 +40,8 @@ def div(a,b):
     return b / a
 
 def logarithm(a, b):
-    if a <= 0 or b <= 0:
-        raise ValueError("Logarithm undefined for non-positive values (a <= 0 or b <= 0).")
+    if a <= 1 or b <= 0:
+        raise ValueError("Logarithm undefined for non-positive values (a <= 1 or b <= 0).")
     return math.log(b, a)
 
 def exp(a, b):
