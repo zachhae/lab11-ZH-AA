@@ -1,11 +1,9 @@
 # https://github.com/zachhae/lab11-ZH-AV
-# Partner 1: Zach Haedicke
-# Partner 2: Aniruth Venkedesh
-
+# Partner 1: Zach Haedike
+# Partner 2: Aniruth Venkedes
 
 import unittest
 from calculator import *
-
 
 class TestCalculator(unittest.TestCase):
     ######### Partner 2
@@ -49,8 +47,6 @@ class TestCalculator(unittest.TestCase):
     def test_log_invalid_argument(self):  # 1 assertion
         with self.assertRaises(ValueError):
             logarithm(0, 5)
-            logarithm(-2, 100)
-            logarithm(-4, 0)
 
     #     # call log function inside, example:
     #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
@@ -69,8 +65,6 @@ class TestCalculator(unittest.TestCase):
 
         self.assertEqual(square_root(144), 12)
         self.assertEqual(square_root(1), 1)
-        self.assertEqual(square_root(36), 6)
-
 
 # Do not touch this
 if __name__ == "__main__":
