@@ -19,6 +19,7 @@ def hypotenuse(a, b):
     except Exception as e:
         print(f"Error in hypotenuse: {e}")
         return
+
 def add(a, b):
     return a + b
 
