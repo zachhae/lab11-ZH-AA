@@ -17,8 +17,6 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(subtract(-2, -3), 1)
         self.assertEqual(subtract(1, 10), -9)
 
-    # ##########################
-
     ######## Partner 1
     def test_multiply(self):  # 3 assertions
         self.assertEqual(mul(15, 3), 45)
@@ -41,8 +39,6 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(logarithm(2, 2), 1.0)
         self.assertEqual(logarithm(2, 8, ), 3.0)
 
-    # ##########################
-
     ######## Partner 1
     def test_log_invalid_argument(self):  # 1 assertion
         with self.assertRaises(ValueError):
@@ -61,7 +57,6 @@ class TestCalculator(unittest.TestCase):
     def test_sqrt(self):  # 3 assertions
         with self.assertRaises(ValueError):
             square_root(-5)
-            square_root(-10)
 
         self.assertEqual(square_root(144), 12)
         self.assertEqual(square_root(1), 1)
