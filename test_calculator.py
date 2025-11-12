@@ -25,12 +25,12 @@ class TestCalculator(unittest.TestCase):
     def test_multiply(self):  # 3 assertions
         self.assertEqual(mul(15, 3), 45)
         self.assertEqual(mul(2, 4), 8)
-        self.assertEqual(mul(12, 2), 144)
+        self.assertEqual(mul(12, 12), 144)
 
     def test_divide(self):  # 3 assertions
-        self.assertAlmostEqual(div(5.0, 2.0), 2.5)
-        self.assertAlmostEqual(div(45, 5), 9)
-        self.assertAlmostEqual(div(144, 12), 12)
+        self.assertAlmostEqual(div(2.0, 5.0), 2.5)
+        self.assertAlmostEqual(div(5, 45), 9)
+        self.assertAlmostEqual(div(12, 144), 12)
 
     ######## Partner 2
     def test_divide_by_zero(self):  # 1 assertion
