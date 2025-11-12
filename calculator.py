@@ -1,3 +1,7 @@
+# https://github.com/zachhae/lab11-ZH-AV
+# Partner 1: Zach Haedicke
+# Partner 2: Aniruth Venkede
+
 """
 calculator.py
 - Defines functions used to create a simple calculator

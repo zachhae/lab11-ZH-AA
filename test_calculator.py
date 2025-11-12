@@ -1,13 +1,22 @@
+# https://github.com/zachhae/lab11-ZH-AV
+# Partner 1: Zach Haedicke
+# Partner 2: Aniruth Venkedesh
+
+
 import unittest
 from calculator import *
 
 class TestCalculator(unittest.TestCase):
     ######### Partner 2
-    # def test_add(self): # 3 assertions
-    #     fill in code
+    def test_add(self):  # 3 assertions
+        self.assertEqual(add(5, 2), 7)
+        self.assertEqual(add(-5, -10), -15)
+        self.assertEqual(add(-5, 10), 5)
 
-    # def test_subtract(self): # 3 assertions
-    #     fill in code
+    def test_subtract(self):  # 3 assertions
+        self.assertEqual(subtract(10, 1), 9)
+        self.assertEqual(subtract(-2, -3), 1)
+        self.assertEqual(subtract(1, 10), -9)
     # ##########################
 
     ######## Partner 1
@@ -19,18 +28,15 @@ class TestCalculator(unittest.TestCase):
     # ##########################
 
     ######## Partner 2
-    # def test_divide_by_zero(self): # 1 assertion
-    #     # call division function inside, example:
-    #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
-    #     #     div(0, 5)
-    #     fill in code
+    def test_divide_by_zero(self):  # 1 assertion
+        with self.assertRaises(ZeroDivisionError):
+            div(0, 17)
 
-    # def test_logarithm(self): # 3 assertions
-    #     fill in code
-
-    # def test_log_invalid_base(self): # 1 assertion
-    #     # use same technique from test_divide_by_zero
-    #     fill in code
+    def test_logarithm(self):  # 3 assertions
+        #     fill in code
+        self.assertEqual(logarithm(10, 100), 2.0)
+        self.assertEqual(logarithm(2, 2), 1.0)
+        self.assertEqual(logarithm(2, 8, ), 3.0)
     # ##########################
     
     ######## Partner 1
@@ -43,7 +49,19 @@ class TestCalculator(unittest.TestCase):
     # def test_hypotenuse(self): # 3 assertions
     #     fill in code
 
-    # def test_sqrt(self): # 3 assertions
+    # def test_sqrt(self): # 3 assertions    def test_divide_by_zero(self): # 1 assertion
+    #     #     # call division function inside, example:
+    #     #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
+    #     #     #     div(0, 5)
+    #     #     fill in code
+    #         with self.assertRaises(ZeroDivisionError):
+    #             div(0,17)
+    #
+    #     def test_logarithm(self): # 3 assertions
+    #     #     fill in code
+    #         self.assertEqual(logarithm(10,100),2.0)
+    #         self.assertEqual(logarithm(2,2), 1.0)
+    #         self.assertEqual(logarithm(2,8,),3.0)
     #     # Test for invalid argument, example:
     #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
     #     #    square_root(NUM)
