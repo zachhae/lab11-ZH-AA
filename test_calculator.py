@@ -34,7 +34,6 @@ class TestCalculator(unittest.TestCase):
             div(0, 17)
 
     def test_logarithm(self):  # 3 assertions
-        #     fill in code
         self.assertEqual(logarithm(10, 100), 2.0)
         self.assertEqual(logarithm(2, 2), 1.0)
         self.assertEqual(logarithm(2, 8, ), 3.0)
@@ -43,11 +42,6 @@ class TestCalculator(unittest.TestCase):
     def test_log_invalid_argument(self):  # 1 assertion
         with self.assertRaises(ValueError):
             logarithm(0, 5)
-
-    #     # call log function inside, example:
-    #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
-    #     #     logarithm(0, 5)
-    #     fill in code
 
     def test_hypotenuse(self):  # 3 assertions
         self.assertEqual(hypotenuse(4, 3), 5)
