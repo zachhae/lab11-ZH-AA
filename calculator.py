@@ -2,14 +2,8 @@
 # Partner 1: Zach Haedike
 # Partner 2: Aniruth Venkedes
 
-"""
-calculator.py
-- Defines functions used to create a simple calculator
-
-One function per operation, in order.
-"""
 import math
-# First example
+
 def square_root(a):
     if a < 0:
         raise ValueError("Cannot take square root of a negative number.")
